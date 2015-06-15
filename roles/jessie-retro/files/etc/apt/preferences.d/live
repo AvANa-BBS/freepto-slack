@@ -1,0 +1,4 @@
+Package: live-*
+Pin: version 3.*
+Pin-Priority: 1001
+
