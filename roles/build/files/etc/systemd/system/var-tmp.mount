@@ -1,0 +1,12 @@
+[Unit]
+Description=/var/tmp on tmpfs
+
+
+[Mount]
+What=tmpfs
+Type=tmpfs
+Where=/var/tmp
+Options=exec,size=10G
+
+[Install]
+WantedBy=multi-user.target
