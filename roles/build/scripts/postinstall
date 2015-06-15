@@ -3,6 +3,7 @@
 # packages, one per line
 PACKAGES="
 live-build
+devscripts
 "
 export DEBIAN_FRONTEND=noninteractive
 yes N 2> /dev/null | apt-get install -qq -y --force-yes ${PACKAGES}
