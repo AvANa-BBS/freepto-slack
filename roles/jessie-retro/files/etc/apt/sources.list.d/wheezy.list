@@ -1,1 +1,1 @@
-deb http://httpredir.debian.org/debian/ wheezy main non-free contrib
+deb http://ftp.debian.org/debian/ wheezy main non-free contrib
