@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# packages, one per line
+PACKAGES="
+live-build
+"
+export DEBIAN_FRONTEND=noninteractive
+yes N 2> /dev/null | apt-get install -qq -y --force-yes ${PACKAGES}
