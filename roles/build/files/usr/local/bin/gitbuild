@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-### This is similar to manualbuild.sh, but is oriented towards automatic build of a git remote
+### This is similar to manualbuild, but is oriented towards automatic build of a git remote
 CACHE=/var/cache/build/repo
 TMP=/var/tmp/build
 WWW=/var/www/dev
@@ -41,6 +41,6 @@ if [[ $ret -ne 0 ]]; then
 fi
 
 echo "Ready to build"
-manualbuild.sh $BASEDIR $*
+manualbuild $BASEDIR $*
 
 # vim: set ft=sh:
