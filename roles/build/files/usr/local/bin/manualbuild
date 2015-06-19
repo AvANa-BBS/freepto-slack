@@ -2,7 +2,7 @@
 ### given a directory, it will build the image inside, then put it under $WWW
 
 set -e
-set -u
+# set -u   # set -u creates some problem sourcing config/freepto, must investigate what
 
 VARIANT=
 # if release is "1", different naming will be used
