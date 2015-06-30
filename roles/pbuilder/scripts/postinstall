@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# packages, one per line
+PACKAGES="
+pbuilder
+git-buildpackage
+"
+export DEBIAN_FRONTEND=noninteractive
+yes N 2> /dev/null | apt-get install -qq -y --force-yes ${PACKAGES}
+
