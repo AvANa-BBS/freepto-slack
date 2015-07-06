@@ -8,3 +8,6 @@ git-buildpackage
 export DEBIAN_FRONTEND=noninteractive
 yes N 2> /dev/null | apt-get install -qq -y --force-yes ${PACKAGES}
 
+if [[ ! -e /var/cache/pbuilder/base-wheezy-i386.cow ]]; then
+	git-pbuilder-wheezy-i386 create
+fi
