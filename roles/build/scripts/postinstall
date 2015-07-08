@@ -13,6 +13,7 @@ python-stdeb
 faketime
 virtualenv
 apt-cacher-ng
+build-essential
 "
 export DEBIAN_FRONTEND=noninteractive
 yes N 2> /dev/null | apt-get install -qq -y --force-yes ${PACKAGES}
